@@ -11,4 +11,4 @@ from project.models.Hello import Hello
 #route index
 @app.route('/', methods = ['GET'])
 def index():
-    return render_template('index.html.j2', data = data)
+    return render_template('index.html.j2')
