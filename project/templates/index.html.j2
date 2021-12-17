@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ihsan Devs</title>
+    <meta name="theme-color" content="#0075ff">
+    <meta name="twitter:title" content="Ihsan Devs">
+    <meta property="og:type" content="website">
+    <meta name="twitter:image" content="https://ihsandevs.codes/assets/img/thumbnail.jpg">
+    <meta name="description" content="Coffee, Code, Repeat">
+    <meta name="twitter:description" content="Coffee, Code, Repeat">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://ihsandevs.codes/assets/img/thumbnail.jpg">
+    <meta name="author" content="Ihsan Devs">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ url_for('static', filename='/assets/') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='/assets/img/icons/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='/assets/img/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="180x180" href="{{ url_for('static', filename='/assets/img/icons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='/assets/img/icons/android-chrome-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ url_for('static', filename='/assets/img/icons/android-chrome-512x512.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='/manifest.json') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-primary">
+        <div class="container-fluid"><a class="navbar-brand" href="/">IhsanDevs.codes</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" data-bs-target="#home" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" data-bs-target="#about" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <main id="fullpage">
+            <div class="row text-center section" id="home" style="height: 40rem;background: var(--bs-gray-300);">
+                <div class="col-12" style="margin-top: 8rem;">
+                    <picture><img class="img-fluid img-thumbnail rounded-circle" src="{{ url_for('static', filename='/assets/img/me.jpg') }}" width="100" height="100"></picture>
+                    <h1 class="text-primary mt-1 fw-bold">Ihsan Devs</h1>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p class="text-black-50 mb-0">&nbsp;Fokus pelajari 1 bahasa pemrograman pilihan kamu, dan jangan terpengaruh apa kata mereka.&nbsp;</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">me</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row text-center section" id="about" style="background: var(--bs-indigo);height: 40rem;">
+                <div class="col" style="margin-top: 8rem;">
+                    <h1 class="text-info mt-1 fw-bold">About</h1>
+                    <p class="lead text-center text-light">Web ini hanyalah sebagai praktek membuat web menggunakan Flask Python. Kedepannya, pada web ini akan saya buat kumpulan tools gratis berbasis python sebagai pengasah materi python yang sudah saya pelajari.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/assets/js/script.min.js') }}"></script>
+</body>
+
+</html>
